@@ -1,0 +1,14 @@
+# Visual Studio
+.vs/
+**/bin/
+**/obj/
+*.user
+*.suo
+*.cache
+packages/
+# Local database / private settings
+*.mdf
+*.ldf
+*.publishsettings
+*.pubxml.user
+# If connection settings contain passwords: review Web.config before committing

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+ <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+ <PropertyGroup><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProjectGuid>{7E2FCA57-96C6-4E2F-9AB5-C43E383F25CA}</ProjectGuid><OutputType>Library</OutputType><RootNamespace>MyStoreMVC5</RootNamespace><AssemblyName>MyStoreMVC5</AssemblyName><TargetFrameworkVersion>v4.8</TargetFrameworkVersion><UseIISExpress>true</UseIISExpress><OutputPath>bin\</OutputPath><ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids></PropertyGroup>
+ <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'"><DebugSymbols>true</DebugSymbols><DebugType>full</DebugType><Optimize>false</Optimize><DefineConstants>DEBUG;TRACE</DefineConstants></PropertyGroup>
+ <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'"><DebugType>pdbonly</DebugType><Optimize>true</Optimize><DefineConstants>TRACE</DefineConstants></PropertyGroup>
+ <ItemGroup><Reference Include="System"/><Reference Include="System.Core"/><Reference Include="System.Data"/><Reference Include="System.Web"/><Reference Include="System.Web.Extensions"/><Reference Include="System.Xml"/><Reference Include="System.Configuration"/><Reference Include="System.ComponentModel.DataAnnotations"/><Reference Include="Microsoft.CSharp"/></ItemGroup>
+ <ItemGroup><PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.9"/><PackageReference Include="Microsoft.AspNet.Razor" Version="3.2.9"/><PackageReference Include="Microsoft.AspNet.WebPages" Version="3.2.9"/><PackageReference Include="EntityFramework" Version="6.5.1" /></ItemGroup>
+ <ItemGroup>
+  <Compile Include="Global.asax.cs"/><Compile Include="App_Start\RouteConfig.cs"/><Compile Include="Controllers\HomeController.cs"/><Compile Include="Areas\Admin\AdminAreaRegistration.cs"/><Compile Include="Areas\Admin\Controllers\HomeController.cs"/><Compile Include="Properties\AssemblyInfo.cs"/>
+  <Content Include="Global.asax"/><Content Include="Web.config"/><Content Include="Views\Web.config"/><Content Include="Views\_ViewStart.cshtml"/><Content Include="Views\Shared\_Layout.cshtml"/><Content Include="Views\Home\Index.cshtml"/><Content Include="Areas\Admin\Views\Web.config"/><Content Include="Areas\Admin\Views\_ViewStart.cshtml"/><Content Include="Areas\Admin\Views\Shared\_Layout.cshtml"/><Content Include="Areas\Admin\Views\Home\Index.cshtml"/><Content Include="Content\site.css"/>
+  <None Include="README.md"/>
+ </ItemGroup>
+ <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+</Project>
